@@ -1,0 +1,17 @@
+{
+  "name": "vanillajs-dialog-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec npm run local:server",
+    "local:server": "serve"
+  },
+  "author": "Ramon Nascimento",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "serve": "^14.0.1"
+  }
+}
