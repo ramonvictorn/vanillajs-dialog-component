@@ -8,6 +8,9 @@
 .justify-items-center {
     justify-items: center;
 }
+.text-center {
+    text-align: center;
+}
 
 .modal {
     top: 0%;

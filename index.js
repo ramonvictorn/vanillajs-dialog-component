@@ -7,7 +7,7 @@ function renderUserOptionSelected (value) {
     }
 
     const textContainer = document.createElement('div')
-    textContainer.classList.add('response');
+    textContainer.classList.add('text-center');
 
     const bodyMsg = `<p> You just clicked "${value}" </p>`;
     textContainer.innerHTML = bodyMsg;

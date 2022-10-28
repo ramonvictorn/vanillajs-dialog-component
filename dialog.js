@@ -11,7 +11,7 @@ const dialog = (body, options) => {
     const modal = document.createElement('div')
     modal.classList.add('modal')
 
-    const bodyMsg = `<p> ${body} </p>`
+    const bodyMsg = `<p class="text-center">  ${body} </p>`
     const content = document.createElement('div')
     content.classList.add('content')
 
