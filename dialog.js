@@ -1,4 +1,12 @@
 console.log('dialog js file')
+
+function hideDialog() {
+    const modal = document.querySelector('.modal')
+    if (modal) {
+      modal.remove()
+    }
+}
+
 const dialog = (body, options) => {
     const modal = document.createElement('div')
     modal.classList.add('modal')
@@ -24,7 +32,8 @@ const dialog = (body, options) => {
 
     return new Promise((resolve) => {
         window.dialog.click = (value) => {
-            resolve(value)
+            hideDialog();
+            resolve(value);
         }
     })
 }
