@@ -16,12 +16,12 @@ const dialog = (body, options) => {
     content.classList.add('content')
 
     const controls = `
-        <div class='controls'>
-            ${options.map((option) => {
+        <div class='controls flex justify-center justify-items-center'>
+            ${(options.map((option) => {
                 return (
-                   `<button onclick="window.dialog.click('${option.value}')">${option.title}</button>`
+                   `<button class="options-button" onclick="window.dialog.click('${option.value}')">${option.title}</button>`
                 )
-            })}
+            })).join('')}
         </div>
     `
 
@@ -44,12 +44,11 @@ setTimeout(async () => {
     const response = await window.dialog('Are you sure you want continue?', [
         {
             title: 'yes',
-            value: 'yesValue'
+            value: 'Yes'
         },
         {
             title: 'no',
-            value: 'noValue'
+            value: 'Cancel'
         },
     ])
-    console.log('response', response)
 }, 500);

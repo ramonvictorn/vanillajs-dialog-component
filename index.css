@@ -1,3 +1,14 @@
+/* reusable */
+.flex {
+    display: flex;
+}
+.justify-center	 {
+    justify-content: center;
+}
+.justify-items-center {
+    justify-items: center;
+}
+
 .modal {
     top: 0%;
     left: 0%;
@@ -15,4 +26,40 @@
     background: white;
     position: absolute;
     transform: translate(-50%, -50%);
-  }
+}
+
+.click-button:hover {
+    background-color: #483ea9;
+}
+.click-button {
+    background-color: #190c8d;
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 55px;
+    width: 160px;
+}
+
+.options-button {
+    background-color: #84819c;
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    margin: 10px;
+}
