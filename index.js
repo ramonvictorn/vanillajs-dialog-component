@@ -1,5 +1,3 @@
-console.log('index js file 2')
-
 function renderUserOptionSelected (value) {
     const oldResponse = document.querySelector('.response')
     if (oldResponse) {
@@ -8,6 +6,7 @@ function renderUserOptionSelected (value) {
 
     const textContainer = document.createElement('div')
     textContainer.classList.add('text-center');
+    textContainer.classList.add('response');
 
     const bodyMsg = `<p> You just clicked "${value}" </p>`;
     textContainer.innerHTML = bodyMsg;
@@ -15,17 +14,16 @@ function renderUserOptionSelected (value) {
 }
 
 async function clickme() {
-    console.log("clickme");
     const response = await dialog('Are you sure you want continue?', [
         {
             title: 'yes',
-            value: 'yesValue'
+            value: 'yes'
         },
         {
-            title: 'no',
-            value: 'noValue'
+            title: 'Cancel',
+            value: 'no'
         },
     ])
-    console.log('clickme response', response);
+
     renderUserOptionSelected(response)
 }

@@ -1,5 +1,3 @@
-console.log('dialog js file')
-
 function hideDialog() {
     const modal = document.querySelector('.modal')
     if (modal) {
@@ -40,15 +38,16 @@ const dialog = (body, options) => {
 
 window.dialog = dialog;
 
-setTimeout(async () => {
-    const response = await window.dialog('Are you sure you want continue?', [
-        {
-            title: 'yes',
-            value: 'Yes'
-        },
-        {
-            title: 'no',
-            value: 'Cancel'
-        },
-    ])
-}, 500);
+// Example
+// setTimeout(async () => {
+//     const response = await window.dialog('Are you sure you want continue?', [
+//         {
+//             title: 'yes',
+//             value: 'Yes'
+//         },
+//         {
+//             title: 'no',
+//             value: 'Cancel'
+//         },
+//     ])
+// }, 500);
